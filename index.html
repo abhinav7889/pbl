@@ -1,0 +1,590 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PBL-4 Technical Showcase — DevOps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Subtle background texture layer -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__nodes"></div>
+    <div class="bg__glow"></div>
+  </div>
+
+  <!-- Deck -->
+  <main class="deck" aria-label="Presentation deck">
+    <div class="track" id="track">
+      <!-- Slide 1 -->
+      <section class="slide is-active" aria-label="Slide 1: Title">
+        <div class="slide__inner">
+          <div class="kicker">PBL-4</div>
+          <h1 class="title">Technical Showcase</h1>
+          <p class="subtitle">DevOps Engineering Contributions</p>
+
+          <div class="card hero">
+            <div class="hero__row">
+              <div class="hero__meta">
+                <div class="hero__name">Tushar Baweja</div>
+                <div class="hero__role">DevOps Intern @ SDC, MUJ</div>
+              </div>
+              <div class="pill">August 2025 – Present</div>
+            </div>
+
+            <div class="hero__chips" aria-label="Key themes">
+              <span class="chip"><span class="chip__dot dot--teal"></span>Production</span>
+              <span class="chip"><span class="chip__dot dot--blue"></span>CI/CD</span>
+              <span class="chip"><span class="chip__dot dot--violet"></span>Observability</span>
+              <span class="chip"><span class="chip__dot dot--gray"></span>Security</span>
+            </div>
+
+            <div class="note">
+              Horizontal navigation only • Use ← / → keys
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Manipal University Jaipur</div>
+            <div class="footer__right">PBL-4 • DevOps • Infrastructure</div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Slide 2 -->
+      <section class="slide" aria-label="Slide 2: Role Overview">
+        <div class="slide__inner">
+          <div class="kicker">Role</div>
+          <h2 class="heading">Overview</h2>
+          <p class="lead">
+            Worked as a DevOps Intern handling real production systems with focus on reliability,
+            deployment automation, and operational visibility.
+          </p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="card__title">Responsibilities</div>
+              <ul class="list">
+                <li>Production deployments and routing</li>
+                <li>Containerization and release engineering</li>
+                <li>Monitoring and service health instrumentation</li>
+                <li>Secure config and environment isolation</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Technologies</div>
+              <div class="taggrid" aria-label="Technology stack">
+                <span class="tag">Prometheus</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">cAdvisor</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Caddy</span>
+                <span class="tag">GitHub Actions</span>
+                <span class="tag">Cloudflare DNS</span>
+              </div>
+
+              <div class="mini-diagram" aria-label="Infrastructure motif">
+                <div class="node n1" title="CI"></div>
+                <div class="node n2" title="Registry"></div>
+                <div class="node n3" title="Reverse Proxy"></div>
+                <div class="node n4" title="Monitoring"></div>
+                <div class="link l1"></div>
+                <div class="link l2"></div>
+                <div class="link l3"></div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Slide 2</div>
+            <div class="footer__right">Role & Stack</div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Slide 3 -->
+      <section class="slide" aria-label="Slide 3: Production Deployment 1">
+        <div class="slide__inner">
+          <div class="kicker">Production Deployment 1</div>
+          <h2 class="heading">Elective Management System</h2>
+          <p class="lead">
+            Used by <strong>1500–2000+ students</strong> for elective selection. Built for scalability and operational stability.
+          </p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="card__title">Engineering Work</div>
+              <ul class="list">
+                <li>Wrote Dockerfiles and multi-stage builds</li>
+                <li>Implemented CI/CD for dev and prod</li>
+                <li>Configured reverse proxy routing via Caddy</li>
+                <li>Designed for highly available rollout patterns</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Deployment Highlights</div>
+              <div class="metricgrid">
+                <div class="metric">
+                  <div class="metric__label">User load</div>
+                  <div class="metric__value">1500–2000+</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__label">Release flow</div>
+                  <div class="metric__value">CI → Deploy</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__label">Routing</div>
+                  <div class="metric__value">Caddy</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__label">Runtime</div>
+                  <div class="metric__value">Containers</div>
+                </div>
+              </div>
+
+              <div class="codebox" role="note" aria-label="Config motif">
+                <div class="codebox__line"><span class="dim">#</span> reverse proxy + health routing</div>
+                <div class="codebox__line"><span class="dim">route</span> / { <span class="accent">reverse_proxy</span> app:8080 }</div>
+                <div class="codebox__line"><span class="dim">handle</span> /health { <span class="accent">respond</span> 200 }</div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Slide 3</div>
+            <div class="footer__right">Elective Management System</div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Slide 4 -->
+      <section class="slide" aria-label="Slide 4: Production Deployment 2">
+        <div class="slide__inner">
+          <div class="kicker">Production Deployment 2</div>
+          <h2 class="heading">IT Ticketing System</h2>
+          <p class="lead">
+            Internal deployment for the college IT department. Focused on clean routing, container reliability, and maintainable ops.
+          </p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="card__title">Infrastructure</div>
+              <ul class="list">
+                <li>Containerization and environment separation</li>
+                <li>Reverse proxy routing and service discovery</li>
+                <li>Deployment hardening for internal users</li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card__title">Operational Design</div>
+              <ul class="list">
+                <li>Predictable release cadence with GitHub Actions</li>
+                <li>Service health endpoints + monitoring hooks</li>
+                <li>Documentation for handoff and incident response</li>
+              </ul>
+
+              <div class="pipeline" aria-label="Pipeline motif">
+                <div class="stage">Build</div>
+                <div class="arrow"></div>
+                <div class="stage">Package</div>
+                <div class="arrow"></div>
+                <div class="stage">Deploy</div>
+                <div class="arrow"></div>
+                <div class="stage">Observe</div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Slide 4</div>
+            <div class="footer__right">IT Ticketing System</div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Slide 5 -->
+      <section class="slide" aria-label="Slide 5: CI/CD Engineering">
+        <div class="slide__inner">
+          <div class="kicker">Release Engineering</div>
+          <h2 class="heading">CI/CD Engineering</h2>
+          <p class="lead">
+            Implemented GitHub Actions pipelines to automate builds, deployments, and versioned releases across environments.
+          </p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="card__title">Pipeline Capabilities</div>
+              <ul class="list">
+                <li>Automated builds and deployments</li>
+                <li>Multi-version releases (dev & prod)</li>
+                <li>Atomic redeployments</li>
+                <li>Rollback capability and safer iteration</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Flow</div>
+              <div class="flow">
+                <div class="flow__item">
+                  <div class="icon icon--box" aria-hidden="true"></div>
+                  <div>
+                    <div class="flow__title">Commit</div>
+                    <div class="flow__desc">Trigger workflow + checks</div>
+                  </div>
+                </div>
+                <div class="flow__item">
+                  <div class="icon icon--gear" aria-hidden="true"></div>
+                  <div>
+                    <div class="flow__title">Build</div>
+                    <div class="flow__desc">Docker image + tags</div>
+                  </div>
+                </div>
+                <div class="flow__item">
+                  <div class="icon icon--swap" aria-hidden="true"></div>
+                  <div>
+                    <div class="flow__title">Deploy</div>
+                    <div class="flow__desc">Atomic rollout + health gate</div>
+                  </div>
+                </div>
+                <div class="flow__item">
+                  <div class="icon icon--pulse" aria-hidden="true"></div>
+                  <div>
+                    <div class="flow__title">Observe</div>
+                    <div class="flow__desc">Metrics + dashboards</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Slide 5</div>
+            <div class="footer__right">CI/CD</div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Slide 6 -->
+      <section class="slide" aria-label="Slide 6: Deploy Bridge System">
+        <div class="slide__inner">
+          <div class="kicker">Platform</div>
+          <h2 class="heading">Deploy Bridge System</h2>
+          <p class="lead">
+            Built a backend deployment orchestration platform to standardize deploy operations across services and environments.
+          </p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="card__title">Stack</div>
+              <div class="taggrid">
+                <span class="tag">Vault</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Caddy</span>
+                <span class="tag">GitHub Actions</span>
+                <span class="tag">Cloudflare DNS</span>
+              </div>
+
+              <div class="card__title mt">Features</div>
+              <ul class="list">
+                <li>Trigger builds, rollbacks, redeployments</li>
+                <li>Version tracking per deployment</li>
+                <li>Secure environment isolation</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Orchestration View</div>
+              <div class="panel">
+                <div class="panel__row">
+                  <span class="muted">service</span>
+                  <span class="muted">env</span>
+                  <span class="muted">version</span>
+                  <span class="muted">status</span>
+                </div>
+                <div class="panel__row">
+                  <span>electives</span>
+                  <span class="pill pill--soft">prod</span>
+                  <span class="mono">v2.7.4</span>
+                  <span class="status ok">healthy</span>
+                </div>
+                <div class="panel__row">
+                  <span>tickets</span>
+                  <span class="pill pill--soft">dev</span>
+                  <span class="mono">v1.3.1</span>
+                  <span class="status warn">deploying</span>
+                </div>
+                <div class="panel__row">
+                  <span>auth</span>
+                  <span class="pill pill--soft">prod</span>
+                  <span class="mono">v3.0.0</span>
+                  <span class="status ok">healthy</span>
+                </div>
+              </div>
+
+              <div class="actions" aria-label="Action motif">
+                <button class="btn" type="button" disabled>Redeploy</button>
+                <button class="btn" type="button" disabled>Rollback</button>
+                <button class="btn" type="button" disabled>Promote</button>
+              </div>
+              <div class="hint">UI shown as a motif (static)</div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Slide 6</div>
+            <div class="footer__right">Deploy Bridge</div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Slide 7 -->
+      <section class="slide" aria-label="Slide 7: Secure Config & Secrets">
+        <div class="slide__inner">
+          <div class="kicker">Security</div>
+          <h2 class="heading">Secure Config & Secrets</h2>
+          <p class="lead">
+            Used Vault to keep secrets out of repos and enable consistent, auditable environment configuration across deployments.
+          </p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="card__title">Vault Usage</div>
+              <ul class="list">
+                <li>Versioned environment management</li>
+                <li>Secure secret injection at runtime</li>
+                <li>Environment-specific configurations</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Pattern</div>
+              <div class="codebox">
+                <div class="codebox__line"><span class="dim">#</span> deploy reads env vars from Vault (not from Git)</div>
+                <div class="codebox__line"><span class="dim">VAULT_PATH</span>=kv/muj/electives/prod</div>
+                <div class="codebox__line"><span class="dim">inject</span> → <span class="accent">docker run --env-file</span> /tmp/env</div>
+                <div class="codebox__line"><span class="dim">rotate</span> → invalidate + redeploy</div>
+              </div>
+
+              <div class="shield" aria-hidden="true">
+                <div class="shield__core"></div>
+                <div class="shield__ring"></div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Slide 7</div>
+            <div class="footer__right">Vault & Config</div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Slide 8 -->
+      <section class="slide" aria-label="Slide 8: Observability Stack">
+        <div class="slide__inner">
+          <div class="kicker">Observability</div>
+          <h2 class="heading">Monitoring Stack</h2>
+          <p class="lead">
+            Designed monitoring using Prometheus, Grafana, and cAdvisor to track container health and reliability across deployments.
+          </p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="card__title">Enabled</div>
+              <ul class="list">
+                <li>Container CPU & memory tracking</li>
+                <li>Reliability insights across deployments</li>
+                <li>Operational dashboards for quick triage</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Dashboard Motif</div>
+              <div class="sparks" aria-hidden="true">
+                <div class="sparkline"></div>
+                <div class="sparkline"></div>
+                <div class="sparkline"></div>
+              </div>
+              <div class="metricgrid">
+                <div class="metric">
+                  <div class="metric__label">CPU</div>
+                  <div class="metric__value mono">0.42</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__label">Memory</div>
+                  <div class="metric__value mono">1.8 GB</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__label">Containers</div>
+                  <div class="metric__value mono">24</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__label">Uptime</div>
+                  <div class="metric__value mono">99.9%</div>
+                </div>
+              </div>
+              <div class="hint">Static visualization style only</div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Slide 8</div>
+            <div class="footer__right">Prometheus • Grafana • cAdvisor</div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Slide 9 -->
+      <section class="slide" aria-label="Slide 9: Deployment Architecture">
+        <div class="slide__inner">
+          <div class="kicker">Architecture</div>
+          <h2 class="heading">Deployment Architecture</h2>
+          <p class="lead">
+            A production-oriented setup balancing fast iteration (dev) and stability (prod), with clean routing and DNS integration.
+          </p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="card__title">Core Decisions</div>
+              <ul class="list">
+                <li>Multi-stage Docker builds</li>
+                <li>Separate dev and production environments</li>
+                <li>Reverse proxy routing with Caddy</li>
+                <li>Cloudflare DNS integration</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">System Map</div>
+              <div class="arch" aria-label="Architecture diagram motif">
+                <div class="arch__col">
+                  <div class="arch__box">GitHub</div>
+                  <div class="arch__box">Actions</div>
+                </div>
+                <div class="arch__pipe"></div>
+                <div class="arch__col">
+                  <div class="arch__box">Images</div>
+                  <div class="arch__box">Deploy Bridge</div>
+                </div>
+                <div class="arch__pipe"></div>
+                <div class="arch__col">
+                  <div class="arch__box">Caddy</div>
+                  <div class="arch__box">Docker</div>
+                </div>
+                <div class="arch__pipe"></div>
+                <div class="arch__col">
+                  <div class="arch__box">Prometheus</div>
+                  <div class="arch__box">Grafana</div>
+                </div>
+              </div>
+
+              <div class="dns" aria-label="DNS motif">
+                <span class="tag tag--soft">Cloudflare DNS</span>
+                <span class="muted">→</span>
+                <span class="mono">apps.muj.internal</span>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Slide 9</div>
+            <div class="footer__right">Architecture</div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Slide 10 -->
+      <section class="slide" aria-label="Slide 10: Outcome">
+        <div class="slide__inner">
+          <div class="kicker">Outcome</div>
+          <h2 class="heading">Production Impact</h2>
+          <p class="lead">
+            Delivered stable, observable, production-grade infrastructure supporting live university applications with repeatable release workflows.
+          </p>
+
+          <div class="grid two">
+            <div class="card">
+              <div class="card__title">Results</div>
+              <ul class="list">
+                <li>Operationally stable deployments for live systems</li>
+                <li>Improved visibility and reliability via observability stack</li>
+                <li>Standardized deployments through orchestration</li>
+                <li>Security posture improved with Vault-managed secrets</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__title">Summary</div>
+              <div class="summary">
+                <div class="summary__item">
+                  <div class="summary__icon dot--teal"></div>
+                  <div>
+                    <div class="summary__title">Infrastructure</div>
+                    <div class="summary__desc">Docker + Caddy for clean routing</div>
+                  </div>
+                </div>
+                <div class="summary__item">
+                  <div class="summary__icon dot--blue"></div>
+                  <div>
+                    <div class="summary__title">Automation</div>
+                    <div class="summary__desc">GitHub Actions with safe releases</div>
+                  </div>
+                </div>
+                <div class="summary__item">
+                  <div class="summary__icon dot--violet"></div>
+                  <div>
+                    <div class="summary__title">Observability</div>
+                    <div class="summary__desc">Prometheus + Grafana + cAdvisor</div>
+                  </div>
+                </div>
+                <div class="summary__item">
+                  <div class="summary__icon dot--gray"></div>
+                  <div>
+                    <div class="summary__title">Security</div>
+                    <div class="summary__desc">Vault-based config & secrets</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="endcap">
+                <div class="endcap__line"></div>
+                <div class="endcap__text">End of deck</div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__left">Slide 10</div>
+            <div class="footer__right">PBL-4 Technical Showcase</div>
+          </footer>
+        </div>
+      </section>
+    </div>
+
+    <!-- Controls -->
+    <nav class="controls" aria-label="Slide controls">
+      <button class="navbtn" id="prevBtn" type="button" aria-label="Previous slide">
+        <span class="navbtn__chev" aria-hidden="true">←</span>
+      </button>
+
+      <div class="status" aria-live="polite">
+        <div class="dots" id="dots" aria-label="Slide progress"></div>
+        <div class="count">
+          <span class="mono" id="countText">1 / 10</span>
+        </div>
+      </div>
+
+      <button class="navbtn" id="nextBtn" type="button" aria-label="Next slide">
+        <span class="navbtn__chev" aria-hidden="true">→</span>
+      </button>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
