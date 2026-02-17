@@ -1,575 +1,478 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PBL-4 Technical Showcase — DevOps</title>
+  <title>Project Chimera - Neural Audio Codec Proposal</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Subtle background texture layer -->
   <div class="bg" aria-hidden="true">
     <div class="bg__grid"></div>
     <div class="bg__nodes"></div>
     <div class="bg__glow"></div>
   </div>
 
-  <!-- Deck -->
   <main class="deck" aria-label="Presentation deck">
     <div class="track" id="track">
-      <!-- Slide 1 -->
-      <section class="slide is-active" aria-label="Slide 1: Title">
+      <section class="slide is-active" aria-label="Slide 1: Title and Overview">
         <div class="slide__inner">
-          <div class="kicker">PBL-4</div>
-          <h1 class="title">Technical Showcase</h1>
-          <p class="subtitle">DevOps Engineering Contributions</p>
+          <div class="kicker">Neural Audio Compression</div>
+          <h1 class="title">Project Chimera</h1>
+          <p class="subtitle">A Comprehensive Proposal for Advancing Neural Audio Codecs</p>
 
           <div class="card hero">
             <div class="hero__row">
               <div class="hero__meta">
-                <div class="hero__name">Tushar Baweja</div>
-                <div class="hero__role">DevOps Intern @ SDC, MUJ</div>
+                <div class="hero__name">Core Objective</div>
+                <div class="hero__role">Solve tonal weakness in state-of-the-art neural audio codecs</div>
               </div>
-              <div class="pill">August 2025 – Present</div>
+              <div class="pill">48kHz @ 30kbps target</div>
             </div>
 
-            <div class="hero__chips" aria-label="Key themes">
-              <span class="chip"><span class="chip__dot dot--teal"></span>Production</span>
-              <span class="chip"><span class="chip__dot dot--blue"></span>CI/CD</span>
-              <span class="chip"><span class="chip__dot dot--violet"></span>Observability</span>
-              <span class="chip"><span class="chip__dot dot--gray"></span>Security</span>
+            <div class="hero__chips" aria-label="Core contributions">
+              <span class="chip"><span class="chip__dot dot--teal"></span>Synthetic tonal augmentation</span>
+              <span class="chip"><span class="chip__dot dot--blue"></span>Balanced curriculum learning</span>
+              <span class="chip"><span class="chip__dot dot--violet"></span>Dual utility validation</span>
+              <span class="chip"><span class="chip__dot dot--gray"></span>High-fidelity focus</span>
             </div>
 
-            <div class="note">
-              Horizontal navigation only • Use ← / → keys
-            </div>
+            <div class="note">Horizontal navigation only - use left and right arrow keys</div>
           </div>
 
           <footer class="footer">
-            <div class="footer__left">Manipal University Jaipur</div>
-            <div class="footer__right">PBL-4 • DevOps • Infrastructure</div>
+            <div class="footer__left">Slide 1</div>
+            <div class="footer__right">Introduction</div>
           </footer>
         </div>
       </section>
 
-      <!-- Slide 2 -->
-      <section class="slide" aria-label="Slide 2: Role Overview">
+      <section class="slide" aria-label="Slide 2: Problem Statement">
         <div class="slide__inner">
-          <div class="kicker">Role</div>
-          <h2 class="heading">Overview</h2>
+          <div class="kicker">Problem</div>
+          <h2 class="heading">The Tonal Weakness Barrier</h2>
           <p class="lead">
-            Worked as a DevOps Intern handling real production systems with focus on reliability,
-            deployment automation, and operational visibility.
+            Neural audio codecs outperform legacy codecs at low bitrates, but they consistently fail on sustained harmonic content such as bells,
+            glockenspiel, triangles, and long piano notes.
           </p>
 
           <div class="grid two">
             <div class="card">
-              <div class="card__title">Responsibilities</div>
+              <div class="card__title">Observed Artifacts</div>
               <ul class="list">
-                <li>Production deployments and routing</li>
-                <li>Containerization and release engineering</li>
-                <li>Monitoring and service health instrumentation</li>
-                <li>Secure config and environment isolation</li>
+                <li>Pitch instability: wavering notes where stability is expected</li>
+                <li>Metallic artifacts: harsh, clangy timbre in reconstructions</li>
+                <li>Premature decay: resonance tails collapse too early</li>
+                <li>Reduced musical realism in high-fidelity contexts</li>
               </ul>
             </div>
 
             <div class="card">
-              <div class="card__title">Technologies</div>
-              <div class="taggrid" aria-label="Technology stack">
-                <span class="tag">Prometheus</span>
-                <span class="tag">Grafana</span>
-                <span class="tag">cAdvisor</span>
-                <span class="tag">Docker</span>
-                <span class="tag">Caddy</span>
-                <span class="tag">GitHub Actions</span>
-                <span class="tag">Cloudflare DNS</span>
-              </div>
+              <div class="card__title">Why This Matters</div>
+              <ul class="list">
+                <li>Major blocker for high-quality music streaming adoption</li>
+                <li>Limits near-lossless delivery at lower bandwidth cost</li>
+                <li>Prevents NACs from replacing traditional codecs end-to-end</li>
+                <li>Creates a gap between objective and perceived quality</li>
+              </ul>
 
-              <div class="mini-diagram" aria-label="Infrastructure motif">
-                <div class="node n1" title="CI"></div>
-                <div class="node n2" title="Registry"></div>
-                <div class="node n3" title="Reverse Proxy"></div>
-                <div class="node n4" title="Monitoring"></div>
-                <div class="link l1"></div>
-                <div class="link l2"></div>
-                <div class="link l3"></div>
+              <div class="metricgrid">
+                <div class="metric">
+                  <div class="metric__label">Target sample rate</div>
+                  <div class="metric__value">48kHz</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__label">Target bitrate</div>
+                  <div class="metric__value">30kbps</div>
+                </div>
               </div>
             </div>
           </div>
 
           <footer class="footer">
             <div class="footer__left">Slide 2</div>
-            <div class="footer__right">Role & Stack</div>
+            <div class="footer__right">Challenge Definition</div>
           </footer>
         </div>
       </section>
 
-      <!-- Slide 3 -->
-      <section class="slide" aria-label="Slide 3: Production Deployment 1">
+      <section class="slide" aria-label="Slide 3: Related Work - Codecs">
         <div class="slide__inner">
-          <div class="kicker">Production Deployment 1</div>
-          <h2 class="heading">Elective Management System</h2>
-          <p class="lead">
-            Used by <strong>1500–2000+ students</strong> for elective selection. Built for scalability and operational stability.
-          </p>
+          <div class="kicker">Background</div>
+          <h2 class="heading">Evolution of Neural Audio Codecs</h2>
+          <p class="lead">Project Chimera builds on prior RVQ-based systems and addresses the tonal limitations left unresolved by existing models.</p>
 
           <div class="grid two">
             <div class="card">
-              <div class="card__title">Engineering Work</div>
+              <div class="card__title">Foundational Systems</div>
               <ul class="list">
-                <li>Wrote Dockerfiles and multi-stage builds</li>
-                <li>Implemented CI/CD for dev and prod</li>
-                <li>Configured reverse proxy routing via Caddy</li>
-                <li>Designed for highly available rollout patterns</li>
+                <li>SoundStream: established convolutional encoder-decoder + RVQ</li>
+                <li>EnCodec: multi-scale STFT discriminators and token LM compression</li>
+                <li>DAC: efficient RVQGAN and factorized codebook lookup</li>
+                <li>Lyra v2: ultra-low bitrate speech focus with WaveGRU</li>
               </ul>
             </div>
-
             <div class="card">
-              <div class="card__title">Deployment Highlights</div>
-              <div class="metricgrid">
-                <div class="metric">
-                  <div class="metric__label">User load</div>
-                  <div class="metric__value">1500–2000+</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__label">Release flow</div>
-                  <div class="metric__value">CI → Deploy</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__label">Routing</div>
-                  <div class="metric__value">Caddy</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__label">Runtime</div>
-                  <div class="metric__value">Containers</div>
-                </div>
-              </div>
+              <div class="card__title">Key Gap Across Prior Work</div>
+              <ul class="list">
+                <li>Strong performance on general audio, weaker tonal reconstruction</li>
+                <li>Pitch-stable sustained harmonics remain under-modeled</li>
+                <li>Speech-specialized designs do not solve high-fidelity music quality</li>
+                <li>Need for targeted training data and curriculum control</li>
+              </ul>
 
-              <div class="codebox" role="note" aria-label="Config motif">
-                <div class="codebox__line"><span class="dim">#</span> reverse proxy + health routing</div>
-                <div class="codebox__line"><span class="dim">route</span> / { <span class="accent">reverse_proxy</span> app:8080 }</div>
-                <div class="codebox__line"><span class="dim">handle</span> /health { <span class="accent">respond</span> 200 }</div>
+              <div class="pipeline" aria-label="Progression motif">
+                <div class="stage">SoundStream</div>
+                <div class="arrow"></div>
+                <div class="stage">EnCodec</div>
+                <div class="arrow"></div>
+                <div class="stage">DAC</div>
+                <div class="arrow"></div>
+                <div class="stage">Chimera</div>
               </div>
             </div>
           </div>
 
           <footer class="footer">
             <div class="footer__left">Slide 3</div>
-            <div class="footer__right">Elective Management System</div>
+            <div class="footer__right">Related Work</div>
           </footer>
         </div>
       </section>
 
-      <!-- Slide 4 -->
-      <section class="slide" aria-label="Slide 4: Production Deployment 2">
+      <section class="slide" aria-label="Slide 4: Related Work - Evaluation">
         <div class="slide__inner">
-          <div class="kicker">Production Deployment 2</div>
-          <h2 class="heading">IT Ticketing System</h2>
+          <div class="kicker">Evaluation Context</div>
+          <h2 class="heading">Audio Quality Assessment Methods</h2>
           <p class="lead">
-            Internal deployment for the college IT department. Focused on clean routing, container reliability, and maintainable ops.
+            Beyond listening tests, embedding-driven metrics evaluate realism by comparing generated and reference audio distributions.
           </p>
 
           <div class="grid two">
             <div class="card">
-              <div class="card__title">Infrastructure</div>
+              <div class="card__title">Primary Metrics and Models</div>
               <ul class="list">
-                <li>Containerization and environment separation</li>
-                <li>Reverse proxy routing and service discovery</li>
-                <li>Deployment hardening for internal users</li>
+                <li>FAD (Frechet Audio Distance): lower is better distribution match</li>
+                <li>CLAP embeddings: contrastive language-audio pretraining</li>
+                <li>OpenL3 embeddings: audio-visual correspondence training</li>
+                <li>Subjective tests remain critical for perceptual validation</li>
               </ul>
             </div>
+
             <div class="card">
-              <div class="card__title">Operational Design</div>
+              <div class="card__title">Chimera Evaluation Hypothesis</div>
               <ul class="list">
-                <li>Predictable release cadence with GitHub Actions</li>
-                <li>Service health endpoints + monitoring hooks</li>
-                <li>Documentation for handoff and incident response</li>
+                <li>Better compression fidelity should improve embedding quality</li>
+                <li>NAC embeddings could serve as zero-shot evaluators</li>
+                <li>Internal features may approach specialist model usefulness</li>
+                <li>Compression and assessment can be unified in one system</li>
               </ul>
 
-              <div class="pipeline" aria-label="Pipeline motif">
-                <div class="stage">Build</div>
-                <div class="arrow"></div>
-                <div class="stage">Package</div>
-                <div class="arrow"></div>
-                <div class="stage">Deploy</div>
-                <div class="arrow"></div>
-                <div class="stage">Observe</div>
+              <div class="codebox" role="note" aria-label="Hypothesis motif">
+                <div class="codebox__line"><span class="dim">if</span> reconstruction_fidelity <span class="accent">increases</span></div>
+                <div class="codebox__line"><span class="dim">then</span> embedding_quality <span class="accent">increases</span></div>
+                <div class="codebox__line"><span class="dim">goal</span> dual utility for compression + assessment</div>
               </div>
             </div>
           </div>
 
           <footer class="footer">
             <div class="footer__left">Slide 4</div>
-            <div class="footer__right">IT Ticketing System</div>
+            <div class="footer__right">Metrics and Embeddings</div>
           </footer>
         </div>
       </section>
 
-      <!-- Slide 5 -->
-      <section class="slide" aria-label="Slide 5: CI/CD Engineering">
+      <section class="slide" aria-label="Slide 5: Architecture">
         <div class="slide__inner">
-          <div class="kicker">Release Engineering</div>
-          <h2 class="heading">CI/CD Engineering</h2>
-          <p class="lead">
-            Implemented GitHub Actions pipelines to automate builds, deployments, and versioned releases across environments.
-          </p>
+          <div class="kicker">Methodology</div>
+          <h2 class="heading">Project Chimera Architecture</h2>
+          <p class="lead">An RVQGAN-style 48kHz system with encoder-decoder symmetry and discriminator design tailored to tonal fidelity.</p>
 
           <div class="grid two">
             <div class="card">
-              <div class="card__title">Pipeline Capabilities</div>
+              <div class="card__title">Core Network</div>
               <ul class="list">
-                <li>Automated builds and deployments</li>
-                <li>Multi-version releases (dev & prod)</li>
-                <li>Atomic redeployments</li>
-                <li>Rollback capability and safer iteration</li>
+                <li>Encoder: four strided conv blocks with strides 2, 4, 8, 8</li>
+                <li>Latent: 1024-dimensional representation at 93.75 fps</li>
+                <li>RVQ: Nq = 32 codebooks (scalable 16-32), 1024 entries each</li>
+                <li>Decoder: mirrored transposed-convolution reconstruction path</li>
               </ul>
             </div>
 
             <div class="card">
-              <div class="card__title">Flow</div>
-              <div class="flow">
-                <div class="flow__item">
-                  <div class="icon icon--box" aria-hidden="true"></div>
-                  <div>
-                    <div class="flow__title">Commit</div>
-                    <div class="flow__desc">Trigger workflow + checks</div>
-                  </div>
-                </div>
-                <div class="flow__item">
-                  <div class="icon icon--gear" aria-hidden="true"></div>
-                  <div>
-                    <div class="flow__title">Build</div>
-                    <div class="flow__desc">Docker image + tags</div>
-                  </div>
-                </div>
-                <div class="flow__item">
-                  <div class="icon icon--swap" aria-hidden="true"></div>
-                  <div>
-                    <div class="flow__title">Deploy</div>
-                    <div class="flow__desc">Atomic rollout + health gate</div>
-                  </div>
-                </div>
-                <div class="flow__item">
-                  <div class="icon icon--pulse" aria-hidden="true"></div>
-                  <div>
-                    <div class="flow__title">Observe</div>
-                    <div class="flow__desc">Metrics + dashboards</div>
-                  </div>
-                </div>
+              <div class="card__title">Discriminator Ensemble</div>
+              <ul class="list">
+                <li>Periodic discriminator at periods {2,3,5,7,11}</li>
+                <li>Targets pitch wobble and tonal periodicity artifacts</li>
+                <li>Aperiodic multi-resolution STFT discriminator</li>
+                <li>Penalizes metallic noise and harmonic mismatch</li>
+              </ul>
+
+              <div class="arch" aria-label="Architecture motif">
+                <div class="arch__col"><div class="arch__box">Encoder</div><div class="arch__box">Latent 1024</div></div>
+                <div class="arch__pipe"></div>
+                <div class="arch__col"><div class="arch__box">RVQ x32</div><div class="arch__box">10-bit codes</div></div>
+                <div class="arch__pipe"></div>
+                <div class="arch__col"><div class="arch__box">Decoder</div><div class="arch__box">48kHz out</div></div>
               </div>
             </div>
           </div>
 
           <footer class="footer">
             <div class="footer__left">Slide 5</div>
-            <div class="footer__right">CI/CD</div>
+            <div class="footer__right">System Design</div>
           </footer>
         </div>
       </section>
 
-      <!-- Slide 6 -->
-      <section class="slide" aria-label="Slide 6: Deploy Bridge System">
+      <section class="slide" aria-label="Slide 6: Losses and Synthesis">
         <div class="slide__inner">
-          <div class="kicker">Platform</div>
-          <h2 class="heading">Deploy Bridge System</h2>
-          <p class="lead">
-            Built a backend deployment orchestration platform to standardize deploy operations across services and environments.
-          </p>
+          <div class="kicker">Training Objective</div>
+          <h2 class="heading">Losses and Synthetic Tonal Generation</h2>
+          <p class="lead">Chimera uses a composite loss and an on-the-fly generator to force robust modeling of tonal physics.</p>
 
           <div class="grid two">
             <div class="card">
-              <div class="card__title">Stack</div>
-              <div class="taggrid">
-                <span class="tag">Vault</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">Docker</span>
-                <span class="tag">Caddy</span>
-                <span class="tag">GitHub Actions</span>
-                <span class="tag">Cloudflare DNS</span>
-              </div>
-
-              <div class="card__title mt">Features</div>
+              <div class="card__title">Total Loss Components</div>
               <ul class="list">
-                <li>Trigger builds, rollbacks, redeployments</li>
-                <li>Version tracking per deployment</li>
-                <li>Secure environment isolation</li>
+                <li>L_mel: multi-scale mel-spectrogram reconstruction</li>
+                <li>L_adv_feat and L_adv_gen: adversarial realism pressure</li>
+                <li>L_commit: codebook commitment and stabilization</li>
+                <li>Weighted combination optimized for fidelity + robustness</li>
               </ul>
+
+              <div class="codebox" role="note">
+                <div class="codebox__line">L_total = w1*L_mel + w2*L_adv_feat + w3*L_adv_gen + w4*L_commit</div>
+              </div>
             </div>
 
             <div class="card">
-              <div class="card__title">Orchestration View</div>
-              <div class="panel">
-                <div class="panel__row">
-                  <span class="muted">service</span>
-                  <span class="muted">env</span>
-                  <span class="muted">version</span>
-                  <span class="muted">status</span>
-                </div>
-                <div class="panel__row">
-                  <span>electives</span>
-                  <span class="pill pill--soft">prod</span>
-                  <span class="mono">v2.7.4</span>
-                  <span class="status ok">healthy</span>
-                </div>
-                <div class="panel__row">
-                  <span>tickets</span>
-                  <span class="pill pill--soft">dev</span>
-                  <span class="mono">v1.3.1</span>
-                  <span class="status warn">deploying</span>
-                </div>
-                <div class="panel__row">
-                  <span>auth</span>
-                  <span class="pill pill--soft">prod</span>
-                  <span class="mono">v3.0.0</span>
-                  <span class="status ok">healthy</span>
-                </div>
-              </div>
-
-              <div class="actions" aria-label="Action motif">
-                <button class="btn" type="button" disabled>Redeploy</button>
-                <button class="btn" type="button" disabled>Rollback</button>
-                <button class="btn" type="button" disabled>Promote</button>
-              </div>
-              <div class="hint">UI shown as a motif (static)</div>
+              <div class="card__title">Synthetic Tonal Signal Engine</div>
+              <ul class="list">
+                <li>Randomized fundamental frequencies per event</li>
+                <li>Variable harmonic count with realistic amplitude falloff</li>
+                <li>Randomized decay envelopes for resonance behavior</li>
+                <li>Poisson-timed events for isolated tones and polyphony</li>
+              </ul>
             </div>
           </div>
 
           <footer class="footer">
             <div class="footer__left">Slide 6</div>
-            <div class="footer__right">Deploy Bridge</div>
+            <div class="footer__right">Objective and Augmentation</div>
           </footer>
         </div>
       </section>
 
-      <!-- Slide 7 -->
-      <section class="slide" aria-label="Slide 7: Secure Config & Secrets">
+      <section class="slide" aria-label="Slide 7: Data and Curriculum">
         <div class="slide__inner">
-          <div class="kicker">Security</div>
-          <h2 class="heading">Secure Config & Secrets</h2>
-          <p class="lead">
-            Used Vault to keep secrets out of repos and enable consistent, auditable environment configuration across deployments.
-          </p>
+          <div class="kicker">Training Strategy</div>
+          <h2 class="heading">Balanced Curriculum and Phased Training</h2>
+          <p class="lead">Training emphasizes tonal learning without degrading general audio capability through controlled sampling and staged optimization.</p>
 
           <div class="grid two">
             <div class="card">
-              <div class="card__title">Vault Usage</div>
+              <div class="card__title">Data and Sampling Plan</div>
               <ul class="list">
-                <li>Versioned environment management</li>
-                <li>Secure secret injection at runtime</li>
-                <li>Environment-specific configurations</li>
+                <li>720-hour 48kHz training dataset</li>
+                <li>Per mini-batch: 33% synthetic tonal signals</li>
+                <li>Per mini-batch: 20% isolated instrument stems</li>
+                <li>Remaining samples from broad real-world audio</li>
               </ul>
             </div>
 
             <div class="card">
-              <div class="card__title">Pattern</div>
-              <div class="codebox">
-                <div class="codebox__line"><span class="dim">#</span> deploy reads env vars from Vault (not from Git)</div>
-                <div class="codebox__line"><span class="dim">VAULT_PATH</span>=kv/muj/electives/prod</div>
-                <div class="codebox__line"><span class="dim">inject</span> → <span class="accent">docker run --env-file</span> /tmp/env</div>
-                <div class="codebox__line"><span class="dim">rotate</span> → invalidate + redeploy</div>
-              </div>
-
-              <div class="shield" aria-hidden="true">
-                <div class="shield__core"></div>
-                <div class="shield__ring"></div>
+              <div class="card__title">Two-Phase Schedule</div>
+              <div class="flow">
+                <div class="flow__item">
+                  <div class="icon icon--box" aria-hidden="true"></div>
+                  <div>
+                    <div class="flow__title">Warm-up (50k steps)</div>
+                    <div class="flow__desc">Reconstruction-only to stabilize codebooks</div>
+                  </div>
+                </div>
+                <div class="flow__item">
+                  <div class="icon icon--gear" aria-hidden="true"></div>
+                  <div>
+                    <div class="flow__title">Full Training (350k steps)</div>
+                    <div class="flow__desc">All losses active with AdamW + LR decay</div>
+                  </div>
+                </div>
+                <div class="flow__item">
+                  <div class="icon icon--pulse" aria-hidden="true"></div>
+                  <div>
+                    <div class="flow__title">Expected Effect</div>
+                    <div class="flow__desc">Target tonal gains without catastrophic forgetting</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <footer class="footer">
             <div class="footer__left">Slide 7</div>
-            <div class="footer__right">Vault & Config</div>
+            <div class="footer__right">Curriculum Learning</div>
           </footer>
         </div>
       </section>
 
-      <!-- Slide 8 -->
-      <section class="slide" aria-label="Slide 8: Observability Stack">
+      <section class="slide" aria-label="Slide 8: Projected Performance">
         <div class="slide__inner">
-          <div class="kicker">Observability</div>
-          <h2 class="heading">Monitoring Stack</h2>
-          <p class="lead">
-            Designed monitoring using Prometheus, Grafana, and cAdvisor to track container health and reliability across deployments.
-          </p>
+          <div class="kicker">Projected Results</div>
+          <h2 class="heading">Theoretical Objective and Subjective Quality</h2>
+          <p class="lead">Performance estimates suggest Chimera can exceed prior codecs in both quality and representational efficiency.</p>
 
           <div class="grid two">
             <div class="card">
-              <div class="card__title">Enabled</div>
-              <ul class="list">
-                <li>Container CPU & memory tracking</li>
-                <li>Reliability insights across deployments</li>
-                <li>Operational dashboards for quick triage</li>
-              </ul>
+              <div class="card__title">Estimated Objective Metrics (30kbps)</div>
+              <div class="metricgrid">
+                <div class="metric"><div class="metric__label">Mel Distance</div><div class="metric__value">0.51</div></div>
+                <div class="metric"><div class="metric__label">SI-SDR</div><div class="metric__value">17.9 dB</div></div>
+                <div class="metric"><div class="metric__label">ViSQOL</div><div class="metric__value">4.42</div></div>
+                <div class="metric"><div class="metric__label">Codebook Entropy</div><div class="metric__value">8.6</div></div>
+              </div>
+              <div class="hint">Compared references: EnCodec 24kbps, DAC 32kbps</div>
             </div>
 
             <div class="card">
-              <div class="card__title">Dashboard Motif</div>
-              <div class="sparks" aria-hidden="true">
-                <div class="sparkline"></div>
-                <div class="sparkline"></div>
-                <div class="sparkline"></div>
-              </div>
-              <div class="metricgrid">
-                <div class="metric">
-                  <div class="metric__label">CPU</div>
-                  <div class="metric__value mono">0.42</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__label">Memory</div>
-                  <div class="metric__value mono">1.8 GB</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__label">Containers</div>
-                  <div class="metric__value mono">24</div>
-                </div>
-                <div class="metric">
-                  <div class="metric__label">Uptime</div>
-                  <div class="metric__value mono">99.9%</div>
-                </div>
-              </div>
-              <div class="hint">Static visualization style only</div>
+              <div class="card__title">Projected Perceptual Gains</div>
+              <ul class="list">
+                <li>Overall MOS estimate: 4.42 (vs DAC 3.95)</li>
+                <li>Tonal-content improvement: +0.8 to +1.2 MOS</li>
+                <li>Cleaner decay and reduced metallic timbre artifacts</li>
+                <li>Improved pitch stability on sustained harmonics</li>
+              </ul>
             </div>
           </div>
 
           <footer class="footer">
             <div class="footer__left">Slide 8</div>
-            <div class="footer__right">Prometheus • Grafana • cAdvisor</div>
+            <div class="footer__right">Quality Projections</div>
           </footer>
         </div>
       </section>
 
-      <!-- Slide 9 -->
-      <section class="slide" aria-label="Slide 9: Deployment Architecture">
+      <section class="slide" aria-label="Slide 9: Embeddings and Discussion">
         <div class="slide__inner">
-          <div class="kicker">Architecture</div>
-          <h2 class="heading">Deployment Architecture</h2>
-          <p class="lead">
-            A production-oriented setup balancing fast iteration (dev) and stability (prod), with clean routing and DNS integration.
-          </p>
+          <div class="kicker">Analysis</div>
+          <h2 class="heading">Dual Utility, Contributions, and Limits</h2>
+          <p class="lead">Chimera is proposed as both a stronger codec and a better embedding source for automatic audio quality assessment.</p>
 
           <div class="grid two">
             <div class="card">
-              <div class="card__title">Core Decisions</div>
+              <div class="card__title">Embedding Hypothesis</div>
               <ul class="list">
-                <li>Multi-stage Docker builds</li>
-                <li>Separate dev and production environments</li>
-                <li>Reverse proxy routing with Caddy</li>
-                <li>Cloudflare DNS integration</li>
+                <li>Projected FAD Spearman correlation: 0.82</li>
+                <li>EnCodec baseline correlation: 0.66</li>
+                <li>DAC baseline correlation: 0.81</li>
+                <li>Approaches specialist embedding quality without separate model</li>
+              </ul>
+
+              <div class="card__title mt">Estimated Contribution Stack</div>
+              <ul class="list">
+                <li>Baseline DAC: 3.95 MOS</li>
+                <li>+ 48kHz operation: +0.07</li>
+                <li>+ synthetic tonal data: +0.26 (largest gain)</li>
+                <li>+ balanced sampling + EMA codebooks: final 4.42</li>
               </ul>
             </div>
 
             <div class="card">
-              <div class="card__title">System Map</div>
-              <div class="arch" aria-label="Architecture diagram motif">
-                <div class="arch__col">
-                  <div class="arch__box">GitHub</div>
-                  <div class="arch__box">Actions</div>
-                </div>
-                <div class="arch__pipe"></div>
-                <div class="arch__col">
-                  <div class="arch__box">Images</div>
-                  <div class="arch__box">Deploy Bridge</div>
-                </div>
-                <div class="arch__pipe"></div>
-                <div class="arch__col">
-                  <div class="arch__box">Caddy</div>
-                  <div class="arch__box">Docker</div>
-                </div>
-                <div class="arch__pipe"></div>
-                <div class="arch__col">
-                  <div class="arch__box">Prometheus</div>
-                  <div class="arch__box">Grafana</div>
-                </div>
-              </div>
+              <div class="card__title">Anticipated Limitations</div>
+              <ul class="list">
+                <li>Higher training and inference compute cost at 48kHz</li>
+                <li>Synthetic data cannot fully match every acoustic nuance</li>
+                <li>Initial focus is weighted toward Western tonal traditions</li>
+              </ul>
 
-              <div class="dns" aria-label="DNS motif">
-                <span class="tag tag--soft">Cloudflare DNS</span>
-                <span class="muted">→</span>
-                <span class="mono">apps.muj.internal</span>
-              </div>
+              <div class="card__title mt">Future Directions</div>
+              <ul class="list">
+                <li>Hierarchical RVQ for more scalable bitrate control</li>
+                <li>Explicit F0-consistency loss for pitch stabilization</li>
+                <li>Contrastive pretraining to close gap with CLAP-class models</li>
+              </ul>
             </div>
           </div>
 
           <footer class="footer">
             <div class="footer__left">Slide 9</div>
-            <div class="footer__right">Architecture</div>
+            <div class="footer__right">Discussion</div>
           </footer>
         </div>
       </section>
 
-      <!-- Slide 10 -->
-      <section class="slide" aria-label="Slide 10: Outcome">
+      <section class="slide" aria-label="Slide 10: Conclusion">
         <div class="slide__inner">
-          <div class="kicker">Outcome</div>
-          <h2 class="heading">Production Impact</h2>
+          <div class="kicker">Conclusion</div>
+          <h2 class="heading">Project Chimera: Proposed Impact</h2>
           <p class="lead">
-            Delivered stable, observable, production-grade infrastructure supporting live university applications with repeatable release workflows.
+            By combining architecture refinement, synthetic tonal augmentation, and curriculum control, Chimera is projected to eliminate the tonal weakness
+            bottleneck and push neural audio compression toward practical high-fidelity deployment.
           </p>
 
           <div class="grid two">
             <div class="card">
-              <div class="card__title">Results</div>
+              <div class="card__title">Expected Outcomes</div>
               <ul class="list">
-                <li>Operationally stable deployments for live systems</li>
-                <li>Improved visibility and reliability via observability stack</li>
-                <li>Standardized deployments through orchestration</li>
-                <li>Security posture improved with Vault-managed secrets</li>
+                <li>Projected overall MOS gain: +0.47 vs DAC baseline</li>
+                <li>Projected tonal MOS gain: +0.8 to +1.2</li>
+                <li>Higher codebook utilization and richer representations</li>
+                <li>A unified model for compression and quality assessment</li>
               </ul>
             </div>
 
             <div class="card">
-              <div class="card__title">Summary</div>
+              <div class="card__title">Final Message</div>
               <div class="summary">
                 <div class="summary__item">
                   <div class="summary__icon dot--teal"></div>
                   <div>
-                    <div class="summary__title">Infrastructure</div>
-                    <div class="summary__desc">Docker + Caddy for clean routing</div>
+                    <div class="summary__title">Core Problem</div>
+                    <div class="summary__desc">Tonal artifacts limit NAC adoption</div>
                   </div>
                 </div>
                 <div class="summary__item">
                   <div class="summary__icon dot--blue"></div>
                   <div>
-                    <div class="summary__title">Automation</div>
-                    <div class="summary__desc">GitHub Actions with safe releases</div>
+                    <div class="summary__title">Primary Solution</div>
+                    <div class="summary__desc">Synthetic tonal data + balanced curriculum</div>
                   </div>
                 </div>
                 <div class="summary__item">
                   <div class="summary__icon dot--violet"></div>
                   <div>
-                    <div class="summary__title">Observability</div>
-                    <div class="summary__desc">Prometheus + Grafana + cAdvisor</div>
+                    <div class="summary__title">Architecture</div>
+                    <div class="summary__desc">48kHz RVQGAN with tonal-aware discriminators</div>
                   </div>
                 </div>
                 <div class="summary__item">
                   <div class="summary__icon dot--gray"></div>
                   <div>
-                    <div class="summary__title">Security</div>
-                    <div class="summary__desc">Vault-based config & secrets</div>
+                    <div class="summary__title">Broader Value</div>
+                    <div class="summary__desc">Compression and evaluation in one framework</div>
                   </div>
                 </div>
               </div>
 
               <div class="endcap">
                 <div class="endcap__line"></div>
-                <div class="endcap__text">End of deck</div>
+                <div class="endcap__text">End of presentation</div>
               </div>
             </div>
           </div>
 
           <footer class="footer">
             <div class="footer__left">Slide 10</div>
-            <div class="footer__right">PBL-4 Technical Showcase</div>
+            <div class="footer__right">Project Chimera</div>
           </footer>
         </div>
       </section>
     </div>
 
-    <!-- Controls -->
     <nav class="controls" aria-label="Slide controls">
       <button class="navbtn" id="prevBtn" type="button" aria-label="Previous slide">
-        <span class="navbtn__chev" aria-hidden="true">←</span>
+        <span class="navbtn__chev" aria-hidden="true"><-</span>
       </button>
 
       <div class="status" aria-live="polite">
@@ -580,7 +483,7 @@
       </div>
 
       <button class="navbtn" id="nextBtn" type="button" aria-label="Next slide">
-        <span class="navbtn__chev" aria-hidden="true">→</span>
+        <span class="navbtn__chev" aria-hidden="true">-></span>
       </button>
     </nav>
   </main>
