@@ -816,3 +816,155 @@ body{
   .navbtn, .tag, .flow__item, .dot{ transition:none; }
 }
 
+
+/* ============================================
+   Resource Hub (single-slide landing)
+   ============================================ */
+.submission-banner{
+  margin: 1.25rem 0 1.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(56,189,248,0.08), rgba(139,92,246,0.08));
+  border: 1px solid rgba(148,163,184,0.18);
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+  align-items: center;
+  text-align: center;
+}
+.submission-banner__label{
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(226,232,240,0.65);
+  font-weight: 600;
+}
+.submission-banner__venues{
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.venue{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.venue__badge{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .3rem .65rem;
+  border-radius: 6px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  background: linear-gradient(135deg, #00629B, #0b8bd9);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,98,155,0.35);
+}
+.venue__badge--springer{
+  background: linear-gradient(135deg, #0b7a3b, #16a34a);
+  box-shadow: 0 2px 8px rgba(11,122,59,0.35);
+}
+.venue__name{
+  font-size: .95rem;
+  font-weight: 600;
+  color: rgba(226,232,240,0.95);
+}
+.venue__divider{
+  width: 1px;
+  height: 24px;
+  background: rgba(148,163,184,0.25);
+}
+
+.links-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+  margin: 1rem 0 1.5rem;
+}
+.link-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem 1.25rem 1.15rem;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(30,41,59,0.55), rgba(15,18,32,0.75));
+  border: 1px solid rgba(148,163,184,0.18);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: transform 280ms var(--ease), border-color 280ms var(--ease), box-shadow 280ms var(--ease);
+}
+.link-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px circle at var(--mx, 50%) var(--my, 0%), rgba(56,189,248,0.08), transparent 40%);
+  opacity: 0;
+  transition: opacity 280ms var(--ease);
+  pointer-events: none;
+}
+.link-card:hover{
+  transform: translateY(-4px);
+  border-color: rgba(148,163,184,0.4);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35), 0 0 0 1px rgba(148,163,184,0.1);
+}
+.link-card:hover::before{ opacity: 1; }
+
+.link-card__icon{
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .9rem;
+  color: #fff;
+}
+.link-card__icon svg{ width: 24px; height: 24px; }
+.link-card__icon--teal{ background: linear-gradient(135deg,#0ea5a4,#14b8a6); box-shadow:0 6px 18px rgba(20,184,166,0.35); }
+.link-card__icon--blue{ background: linear-gradient(135deg,#2563eb,#38bdf8); box-shadow:0 6px 18px rgba(56,189,248,0.35); }
+.link-card__icon--violet{ background: linear-gradient(135deg,#7c3aed,#a78bfa); box-shadow:0 6px 18px rgba(139,92,246,0.35); }
+
+.link-card__kicker{
+  font-size: .68rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(226,232,240,0.55);
+  font-weight: 600;
+  margin-bottom: .35rem;
+}
+.link-card__title{
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: .55rem;
+  letter-spacing: -0.01em;
+}
+.link-card__desc{
+  font-size: .9rem;
+  line-height: 1.5;
+  color: rgba(226,232,240,0.72);
+  flex: 1;
+  margin-bottom: 1rem;
+}
+.link-card__cta{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .88rem;
+  font-weight: 600;
+  color: #38bdf8;
+  transition: gap 220ms var(--ease);
+}
+.link-card__cta svg{ width: 16px; height: 16px; }
+.link-card:hover .link-card__cta{ gap: .8rem; }
+
+@media (max-width: 900px){
+  .links-grid{ grid-template-columns: 1fr; }
+  .submission-banner__venues{ flex-direction: column; gap: .75rem; }
+  .venue__divider{ width: 32px; height: 1px; }
+}
